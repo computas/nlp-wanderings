@@ -1,0 +1,15 @@
+name: sentence-transformers
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+ - python=3.7
+ - pandas
+ - tqdm
+ - ipywidgets
+ - jupyterlab
+ - pip=19.3.1
+ - pip:
+   - transformers
+   - sentence-transformers
+
