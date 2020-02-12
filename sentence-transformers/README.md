@@ -11,7 +11,6 @@ To create the environment you will need [miniconda](https://docs.conda.io/en/lat
 2. Activate the environment
     ```
     conda activate sentence-transformers
-    jupyter nbextension enable --py widgetsnbextension
     ```
 3. Enable jupyter widgets. Seems we need them because of the `tqdm` dependency when loading models directly from the `models` class and not the pre-trained ones.
     ```
