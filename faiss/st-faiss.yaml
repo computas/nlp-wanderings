@@ -1,0 +1,17 @@
+name: st-faiss
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+ - python=3.7
+ - faiss-cpu=1.6.1
+ - pandas
+ - tqdm
+ - ipywidgets
+ - jupyterlab
+ - pip
+ - pip:
+   - transformers
+   - sentence-transformers
+

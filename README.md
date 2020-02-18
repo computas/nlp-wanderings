@@ -8,6 +8,9 @@ Wandering in the world of NLP. Go bananas and have fun!
 
 # Overview
 
+## [FAISS](faiss)
+Playing with Facebook's [FAISS](https://github.com/facebookresearch/faiss) similarity search and clustering of dense vectors. We build a semantic search prototype.
+
 ## [Sentence tranformers](sentence-transformers)
 
 Playing with better sentence embeddings that what normal transformer models give you. Using the [sentence tranformers](https://github.com/UKPLab/sentence-transformers) library.
