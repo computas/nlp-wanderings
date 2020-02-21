@@ -15,6 +15,7 @@ dependencies:
  - jupyterlab
  - pip
  - pip:
+   - unidecode
    - requests
    - elasticsearch
    - sentence-transformers==0.2.5
