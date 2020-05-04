@@ -1,0 +1,8 @@
+name: norberta
+dependencies:
+ - python>=3.7
+ - pytorch-cpu
+ - pip
+ - pip:
+   - transformers==2.8.0
+   - tensorboardX
