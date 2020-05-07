@@ -2,6 +2,14 @@
 
 This directory is for running norberta in kubernetes
 
+# todo
+
+Roughly 
+
+1. tie in with azure devops
+2. tie in arm
+3. tie in with mlops
+
 # prerequisites
 
 * Only tested on linux
@@ -83,3 +91,85 @@ docker run -it norberta200506acr.azurecr.io/norberta200506:0.1 bash
 root@0f585b7ccda7:/workspace# 
 ```
 
+# aks cluster config
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make az-create-cluster
+```
+
+and then 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make az-context
+```
+
+# aks ops
+
+With all this, we should be up and running; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-status
+Services:
+---------
+No resources found.
+
+Pods:
+---------
+No resources found.
+
+Nodes:
+---------
+NAME                                STATUS   ROLES   AGE   VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+aks-nodepool1-4848477-vmss0049954   Ready    agent   25m   v1.15.10   <..>          <none>        Ubuntu 16.04.6 LTS   4.15.0-1077-azure   docker://3.0.10+azure
+
+Secrets:
+---------
+No resources found.
+Namespaces:
+---------
+NAME              STATUS   AGE
+default           Active   27m
+kube-node-lease   Active   27m
+kube-public       Active   27m
+kube-system       Active   27m
+```
+
+Create a namespace; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-create-ns
+```
+
+# development cycle
+
+## pod
+
+deploy; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-create-deploy
+```
+
+check sanity; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-describe-pod
+``` 
+
+or 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-log-pod
+``` 
+
+login to pod; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-shell
+``` 
+
+delete deployment; 
+
+```
+(base) yarc@yarc-mainII ~/repository/git/github/nlp-wanderings/NorBERTa/docker $ make kub-delete-deploy
+``` 

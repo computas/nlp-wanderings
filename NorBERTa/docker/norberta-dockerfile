@@ -2,8 +2,6 @@ FROM pytorch/pytorch:1.5-cuda10.1-cudnn7-devel
 
 COPY norberta.yaml /workspace
 
-RUN conda init bash
-
 RUN conda env update -f norberta.yaml
 
-RUN conda activate norberta
+RUN conda init bash
