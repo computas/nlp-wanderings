@@ -1,16 +1,17 @@
 trigger:
-- master
+  branches:
+    include:
+    - master
+
+  paths:
+    include:
+    - NorBERTa/docker/norberta-dockerfile
 
 pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
   imageName: 'norberta200506acr.azurecr.io/norberta200506:0.1'
-
-paths:
-    include:
-    - NorBERTa/docker/norberta-dockerfile
-
 
 steps:
 - task: Docker@2
