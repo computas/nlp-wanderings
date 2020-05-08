@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  imageName: 'norberta200506acr.azurecr.io/norberta200506:0.1'
+
+steps:
+- task: Docker@2
+  displayName: Build an image
+  inputs:
+    repository: $(imageName)
+    command: build
+    Dockerfile: norberta-dockerfile
