@@ -20,6 +20,7 @@ steps:
 
 - script: |
     cd NorBERTa/docker
+    # no apostrophes, no backward apostrophes.
     echo Now were at $(pwd)
     ls
   displayName: 'Run a custom script'
