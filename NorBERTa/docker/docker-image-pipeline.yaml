@@ -11,7 +11,8 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'norberta200506acr.azurecr.io/norberta200506:0.1'
+  imageName: 'norberta200506acr.azurecr.io/norberta200506'
+  DOCKER_BUILDKIT: 1
 
 steps:
 - task: Docker@2
