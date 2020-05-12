@@ -20,6 +20,6 @@ steps:
 
 - script: |
     cd NorBERTa/docker
-    echo Now we're at $(pwd)
+    echo Now were at $(pwd)
     ls
   displayName: 'Run a custom script'
