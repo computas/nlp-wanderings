@@ -17,3 +17,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- script: |
+    workingDirectory: NorBERTa/docker
+    pwd
+    ls
+  displayName: 'Run a custom script'
