@@ -22,4 +22,5 @@ steps:
     command: build
     Dockerfile: NorBERTa/docker/norberta-dockerfile
     # https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml
-    buildContext: $(Build.Repository.LocalPath)
+    # buildContext: $(Build.Repository.LocalPath)
+    buildContext: $(System.DefaultWorkingDirectory)
