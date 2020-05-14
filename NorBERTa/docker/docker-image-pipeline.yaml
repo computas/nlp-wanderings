@@ -22,6 +22,6 @@ steps:
     command: build
     Dockerfile: NorBERTa/docker/norberta-dockerfile
     # https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml
+    # the makefile depends on a file in the parent dir, so the build context must be cd .. :
     buildContext: $(Build.Repository.LocalPath)/NorBERTa
     # buildContext: $(System.DefaultWorkingDirectory)
-    # buildContext: **
