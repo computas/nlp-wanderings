@@ -24,4 +24,4 @@ steps:
     # https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml
     # buildContext: $(Build.Repository.LocalPath)
     # buildContext: $(System.DefaultWorkingDirectory)
-    buildContext: **
+    # buildContext: **
