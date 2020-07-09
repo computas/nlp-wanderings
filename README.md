@@ -19,3 +19,6 @@ Playing with better sentence embeddings that what normal transformer models give
 
 Playing with Transformers via the [simple transformers](https://github.com/ThilinaRajapakse/simpletransformers) library.
 
+## [wav2vec](wav2vec)
+
+Test of facebook's state of the art speech recognition ([blog](https://ai.facebook.com/blog/wav2vec-state-of-the-art-speech-recognition-through-self-supervision/), [article](https://arxiv.org/pdf/2007.03001.pdf)).

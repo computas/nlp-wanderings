@@ -1,0 +1,17 @@
+name: wav2vec
+channels:
+  - defaults
+  - pytorch
+  - conda-forge  
+dependencies:
+ - python=3.7
+ - jupyterlab
+ - black # code formatting
+ - nb_black # code formatting jupyter lab
+ - watermark # watermarking notebooks
+ - pip # We install the real dependencies via pip
+ - pip:
+   - fairseq==0.9.0
+   - numba==0.48 # librosa dependency
+   - librosa
+
