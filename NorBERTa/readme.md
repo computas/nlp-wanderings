@@ -9,6 +9,8 @@ Use the `norberta.yaml` file to produce a conda environment:
 conda env update -f norberta.yaml
 ```
 
+(add `--name` to import into an existing environment and override the default name in the .yaml file)
+
 Run then the following:
 1. `source get_data.sh`  will download the dataset
 2. `python train_tokenizer.py` will create the vocabulary files for the model

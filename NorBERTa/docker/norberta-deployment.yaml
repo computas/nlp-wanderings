@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+  creationTimestamp: null
+  labels:
+    service: norberta200506
+  name: norberta200506
+  namespace: norberta200506ns
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        service: norberta200506
+    spec:
+      containers:
+      - image: norberta200506acr.azurecr.io/norberta200506:0.1
+        name: norberta200506
+        imagePullPolicy: Always
+        command: ["/bin/sh"]
+        args: ["-c", "sleep 100000"]
+        ports:
+        - containerPort: 22
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: GET_HOSTS_FROM
+          value: dns
+status: {}
