@@ -11,4 +11,4 @@ conda env create -f wav2vec.yaml
 conda activate wav2vec
 ```
 
-2. 
+2. Run `jupyter lab` and open the notebooks under [notebooks](notebooks)
