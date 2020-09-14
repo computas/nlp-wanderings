@@ -25,7 +25,7 @@ source .env
 docker-compose logs enterprisesearch | grep "Default user credentials have been setup." -A 2
 ```
 
-3.Open [localhost:3002](http://localhost:3002) and log in, or start [kibana][http://localhost:5601] and go to `App Search`.
+3.Open [localhost:3002](http://localhost:3002) and log in, or start [kibana](http://localhost:5601) and go to `App Search`.
 
 ## Known issues
 
