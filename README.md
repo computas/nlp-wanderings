@@ -22,3 +22,7 @@ Playing with Transformers via the [simple transformers](https://github.com/Thili
 ## [wav2vec](wav2vec)
 
 Test of facebook's state of the art speech recognition ([blog](https://ai.facebook.com/blog/wav2vec-state-of-the-art-speech-recognition-through-self-supervision/), [article](https://arxiv.org/pdf/2007.03001.pdf)).
+
+## Enterprise search
+
+Test of elastic [enterprise search](https://www.elastic.co/guide/en/enterprise-search/current/docker.html)
