@@ -26,3 +26,7 @@ Test of facebook's state of the art speech recognition ([blog](https://ai.facebo
 ## [Enterprise search](enterprise-search)
 
 Test of elastic [enterprise search](https://www.elastic.co/guide/en/enterprise-search/current/docker.html)
+
+## [Relevance tuning with Quepid](quepid)
+
+Test of relevance tuning with [Quepid](https://github.com/o19s/quepid).

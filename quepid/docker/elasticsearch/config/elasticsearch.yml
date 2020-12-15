@@ -1,0 +1,11 @@
+network.host: 0.0.0.0
+discovery.type: "single-node"
+
+http.cors:
+  enabled: true
+# funker med localhost
+  allow-origin: /https?:\/\/localhost(:[0-9]+)?/ 
+# For the web deployment
+#  allow-origin: /https?:\/\/app\.quepid\.com/  
+  allow-credentials: true
+  allow-headers: "X-Requested-With, Content-Type, Content-Length, if-modified-since, Authorization"  
